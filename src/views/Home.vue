@@ -103,7 +103,7 @@ export default {
       if (this.form.username == this.user_from_db.usernameInput) {
         
         if (this.form.password == this.user_from_db.passwordInput) {
-          this.$router.push({path: '@views/NewPage.vue'})
+          this.$router.push("/dashboard")
         } else {
           this.errors.password = true
           return
